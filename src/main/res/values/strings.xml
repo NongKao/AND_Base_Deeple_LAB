@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">themewallpaper</string>
+    <string name="set_wallpaper">Set as wallpaper</string>
+    <string name="home_screen">Home screen</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="both_screens">Both screens</string>
+    <string name="action_close">Close</string>
+    <string name="action_download">Download</string>
+</resources>
