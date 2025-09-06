@@ -15,7 +15,7 @@ import com.projects.base.ui.component.category.CategoryFragment
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>() {
+internal class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     private val vm: HomeViewModel by viewModel()
     private lateinit var viewPagerAdapter: ViewPagerAdapter

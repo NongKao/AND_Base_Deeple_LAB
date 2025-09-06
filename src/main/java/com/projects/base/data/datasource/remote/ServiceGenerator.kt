@@ -42,7 +42,7 @@ class ServiceGenerator {
     init {
         okHttpBuilder.addInterceptor(headerInterceptor)
         okHttpBuilder.addInterceptor(logger)
-        okHttpBuilder.addInterceptor(ChuckerInterceptor.Builder(BaseApplicationKit.instance).build())
+        okHttpBuilder.addInterceptor(ChuckerInterceptor.Builder(BaseApplicationKit.context).build())
         okHttpBuilder.connectTimeout(timeoutConnect.toLong(), TimeUnit.SECONDS)
         okHttpBuilder.readTimeout(timeoutRead.toLong(), TimeUnit.SECONDS)
         val client = okHttpBuilder.build()

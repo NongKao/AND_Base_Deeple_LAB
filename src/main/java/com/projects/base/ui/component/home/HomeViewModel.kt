@@ -10,17 +10,17 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-sealed class HomeIntent {
+internal sealed class HomeIntent {
     object LoadCategories : HomeIntent()
 }
 
-data class HomeUiState(
+internal data class HomeUiState(
     val categories: List<Category> = emptyList(),
     val isLoading: Boolean = false,
     val error: String? = null
 )
 
-class HomeViewModel(
+internal class HomeViewModel(
     private val repository: WallpaperRepository
 ) : ViewModel() {
 

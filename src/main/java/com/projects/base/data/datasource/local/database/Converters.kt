@@ -4,7 +4,7 @@ import androidx.room.TypeConverter
 import com.projects.base.data.entity.ActionTaken
 import com.projects.base.data.entity.SessionType
 
-class Converters {
+internal class Converters {
     @TypeConverter
     fun fromSessionType(value: SessionType): String = value.name
 

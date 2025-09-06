@@ -6,7 +6,7 @@ import com.projects.base.databinding.ActivityMainBinding
 import com.projects.base.ui.base.BaseActivity
 import com.projects.base.ui.component.home.HomeFragment
 
-class MainActivity : BaseActivity<ActivityMainBinding>() {
+internal class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun getDataBinding(): ActivityMainBinding {
         return ActivityMainBinding.inflate(layoutInflater)
     }

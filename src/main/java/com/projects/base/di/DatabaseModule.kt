@@ -5,7 +5,7 @@ import com.projects.base.data.datasource.local.dao.WallpaperDao
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
-val dbModule = module {
+internal val dbModule = module {
     // Database
     single { AppDatabase.getDatabase(androidContext()) }
 

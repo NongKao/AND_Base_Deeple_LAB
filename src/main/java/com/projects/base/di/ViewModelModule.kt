@@ -7,7 +7,7 @@ import com.projects.base.ui.component.detail.ImageDetailViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-val viewModelModule = module {
+internal val viewModelModule = module {
     viewModel { HomeViewModel(get()) }
     viewModel { CategoryViewModel(get()) }
     viewModel { SplashViewModel(get()) }

@@ -25,7 +25,7 @@ import com.projects.base.data.entity.WallpaperCacheEntity
     version = 3,
     exportSchema = true
 )
-abstract class AppDatabase : RoomDatabase() {
+internal abstract class AppDatabase : RoomDatabase() {
     abstract fun appInfoDao(): AppInfoDao
     abstract fun focusSessionDao(): FocusSessionDao
     abstract fun blockEventDao(): BlockEventDao

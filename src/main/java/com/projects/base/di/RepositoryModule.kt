@@ -17,7 +17,7 @@ import android.app.WallpaperManager
 import com.projects.base.domain.wallpaper.WallpaperSetter
 import com.projects.base.domain.wallpaper.WallpaperSetterImpl
 
-val repositoryModule = module {
+internal val repositoryModule = module {
     // Service Generator
     single { ServiceGenerator() }
 

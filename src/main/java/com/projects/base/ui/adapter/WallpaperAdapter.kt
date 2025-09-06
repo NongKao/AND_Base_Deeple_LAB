@@ -11,7 +11,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.projects.base.data.model.WallpaperItem
 import com.projects.base.databinding.ItemWallpaperBinding
 
-class WallpaperAdapter(
+internal class WallpaperAdapter(
     private val onClick: (WallpaperItem) -> Unit
 ) : ListAdapter<WallpaperItem, WallpaperViewHolder>(DIFF) {
 
