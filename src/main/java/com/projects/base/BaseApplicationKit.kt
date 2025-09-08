@@ -2,6 +2,7 @@ package com.projects.base
 
 import android.annotation.SuppressLint
 import android.content.Context
+import org.koin.android.ext.koin.androidContext
 import org.koin.core.KoinApplication
 import org.koin.core.context.GlobalContext
 import org.koin.core.context.startKoin
@@ -15,6 +16,7 @@ object BaseApplicationKit {
 
     fun initKoin(app: Context) {
         koin = GlobalContext.getKoinApplicationOrNull() ?: startKoin {
+            androidContext(app)
             modules(modules)
         }
         context = app
