@@ -2,6 +2,7 @@ package com.projects.base
 
 import android.annotation.SuppressLint
 import android.content.Context
+import androidx.annotation.Keep
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.KoinApplication
 import org.koin.core.context.GlobalContext
@@ -9,6 +10,7 @@ import org.koin.core.context.startKoin
 import org.koin.core.module.Module
 
 @SuppressLint("StaticFieldLeak")
+@Keep
 object BaseApplicationKit {
     lateinit var koin: KoinApplication
     lateinit var context: Context
